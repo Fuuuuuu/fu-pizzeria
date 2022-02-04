@@ -4,7 +4,8 @@
   "info": {
     "singularName": "pizza",
     "pluralName": "pizzas",
-    "displayName": "pizza"
+    "displayName": "pizza",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +24,13 @@
       "target": "api::topping.topping"
     },
     "size": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "Small",
+        "Medium",
+        "Large",
+        "XLarge"
+      ]
     }
   }
 }
