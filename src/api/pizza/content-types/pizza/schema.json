@@ -23,14 +23,10 @@
       "relation": "oneToMany",
       "target": "api::topping.topping"
     },
-    "size": {
-      "type": "enumeration",
-      "enum": [
-        "Small",
-        "Medium",
-        "Large",
-        "XLarge"
-      ]
+    "sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::size.size"
     }
   }
 }
