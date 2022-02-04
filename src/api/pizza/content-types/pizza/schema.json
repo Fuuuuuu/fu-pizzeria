@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pizzas",
+  "info": {
+    "singularName": "pizza",
+    "pluralName": "pizzas",
+    "displayName": "pizza"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "toppings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topping.topping"
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}
