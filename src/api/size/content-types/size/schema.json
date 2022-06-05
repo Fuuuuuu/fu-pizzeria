@@ -4,7 +4,8 @@
   "info": {
     "singularName": "size",
     "pluralName": "sizes",
-    "displayName": "size"
+    "displayName": "size",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,9 @@
   "attributes": {
     "size": {
       "type": "string"
+    },
+    "multiplier": {
+      "type": "decimal"
     }
   }
 }
